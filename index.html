@@ -28,13 +28,14 @@
                   placeholder="Enter your city..."
                   class="form-control"
                   id="city-input"
+                  autocomplete="off"
                 />
               </div>
               <div class="col-3">
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-success w-100"
                 />
               </div>
             </div>
@@ -53,15 +54,26 @@
               <div class="clearfix weather-temperature">
                 <img src="" alt="Clear" id="icon" />
                 <strong id="temperature"></strong>
-                <span class="units">&degC / <a href="">&degF </a></span>
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active"> &degC </a> ┃
+                  <a href="#" id="fahrenheit-link" class="active"
+                    >&degF
+                  </a></span
+                >
               </div>
             </div>
 
             <div class="col-md-6">
               <ul>
-                <li>Humidity: <span id="humidity"> </span>%</li>
-                <li>Wind: <span id="windspeed"></span> km/h</li>
-                <li>Pressure: <span id="pressure"> </span> hPa</li>
+                <li>
+                  <strong>Humidity: </strong> <span id="humidity"> </span>%
+                </li>
+                <li>
+                  <strong>Wind:</strong> <span id="windspeed"></span> km/h
+                </li>
+                <li>
+                  <strong> Pressure: </strong> <span id="pressure"> </span> hPa
+                </li>
               </ul>
             </div>
           </div>

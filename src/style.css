@@ -12,7 +12,7 @@
 h1 {
   color: #878787;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -53,4 +53,14 @@ li::first-letter {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.active {
+  text-decoration: underline;
 }
